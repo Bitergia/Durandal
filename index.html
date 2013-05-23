@@ -1,34 +1,52 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>Durandal</title>
-
-        <link rel="apple-touch-startup-image" href="Content/images/ios-startup-image-landscape.png" media="(orientation:landscape)" />
-        <link rel="apple-touch-startup-image" href="Content/images/ios-startup-image-portrait.png" media="(orientation:portrait)" />
-        <link rel="apple-touch-icon" href="Content/images/icon.png"/>
-        
-        <!--Durandal does not require Bootstrap or Font Awesome. 
-            They are used to make the samples look nice.-->
-        <link rel="stylesheet" href="Content/bootstrap.min.css" type="text/css"/>
-        <link rel="stylesheet" href="Content/bootstrap-responsive.min.css" type="text/css"/>
-        <link rel="stylesheet" href="Content/font-awesome.min.css" type="text/css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Metrics Browser, from Bitergia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <link rel="stylesheet" type="text/css" id="theme" href="VizGrimoireJS/src/viz.css" />
+        <link href="VizGrimoireJS/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <style type="text/css">
+          body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+          }
+          .sidebar-nav {
+            padding: 9px 0;
+          }
+        </style>
+        <link href="VizGrimoireJS/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="custom.css" />    
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="../assets/js/html5shiv.js"></script>
+        <![endif]-->
+    
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="favicon.png">
         
         <!--The css in this file makes the modal dialogs work right.-->
         <link rel="stylesheet" href="Content/durandal.css" type="text/css"/>
         
-        <!--Css specific to the samples.-->
+        <!-- Css specific to the samples.-->
         <link rel="stylesheet" href="Content/app.css" type="text/css"/>
-
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <meta name="format-detection" content="telephone=no"/>
-    
-        <meta name="viewport" content="width=device-width" />
     </head>
     <body>
         <div id="applicationHost"></div>
         
-        <script type="text/javascript" src="Scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="VizGrimoireJS/src/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="VizGrimoireJS/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script>                    
+        
+        <!-- <script type="text/javascript" src="Scripts/jquery-1.9.1.min.js"></script> -->
         <script type="text/javascript" src="Scripts/knockout-2.2.1.js"></script>
         <script type="text/javascript" src="app/durandal/amd/require.js" data-main="app/main"></script>
     </body>

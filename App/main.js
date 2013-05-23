@@ -16,6 +16,7 @@ define(['durandal/app', 'durandal/system', 'durandal/viewLocator'],
         viewLocator.useConvention();
 
         app.adaptToDevice();
-        app.setRoot('samples/shell');
+        // app.setRoot('samples/shell');
+        app.setRoot('browser/shell');
     });
 });
