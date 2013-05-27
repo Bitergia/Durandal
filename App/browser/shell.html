@@ -61,8 +61,8 @@
     </div>
         <!--ko compose: { 
             model: router.activeItem, //wiring the router
-            afterCompose: Report.convertGlobal,
+            afterCompose: router.afterCompose,
             transition:'entrance', //use the 'entrance' transition when switching views
-            cacheViews:true //telling composition to keep views in the dom, and reuse them (only a good idea with singleton view models)
+            cacheViews:false //telling composition to keep views in the dom, and reuse them (only a good idea with singleton view models)
         }--><!--/ko-->
 </div>
