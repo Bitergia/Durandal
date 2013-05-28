@@ -6,6 +6,7 @@
     function viewAttached() {
         system.log('View Activated', this);
         Report.convertGlobal();
+        Report.convertStudies();
     }
     
     return {
